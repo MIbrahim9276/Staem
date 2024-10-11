@@ -26,11 +26,11 @@ body {
     height: 100%;
     display: grid;
     grid-template-areas:
-        "nav search util"
+        "nav main main"
         "nav main main"
         "nav main main";
-    grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 0.5fr 3.5fr;
+    grid-template-rows: 0.5fr 3.5fr;
     row-gap: 1em;
     column-gap: 2em;
 }
