@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <title>Staem Publish</title>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h3>add new product</he>
+        <form class="form-box" action="" method="post">
+            <label class="enter-label" for="product-name">Product name</label>
+            <input id="product-name" class="box" type="text" name="name"  required>
+            <label class="enter-label" for="product-price">Price</label>
+            <input id="product-price" class="box" type="text" 
+          name="price" required>
+            <br>
+            <label class="choose-picture" for="file">Choose picture</label>
+            <input class="box" type="file" name="file" id="file" 
+            required style="display: none;" >
+            <button name="upload" type="submit">add product</button>
+            <br><br>
+            <a href="products.php">show Products</a>
+        </form>
+    </div>
+    </center>
+</body>
+</html>
