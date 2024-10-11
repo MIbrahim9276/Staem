@@ -16,7 +16,6 @@
     align-items: center;
 }
 .box{
-    box-shadow: 1px 1px 10px black;
     width: 50%;
     height: 60%;
     background-color: rgba(154, 154, 154, 0.1);

@@ -43,7 +43,7 @@ body::before {
     grid-template-rows: 0.5fr 2.5fr 1fr;
     row-gap: 1em;
     column-gap: 2em;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(200px);
 }
 
 @keyframes rotation {
