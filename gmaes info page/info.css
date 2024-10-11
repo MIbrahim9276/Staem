@@ -1,10 +1,6 @@
 @import url(../stylesheets/bodystyle.css);
 @import url(../stylesheets/navigation.css);
 
-#searchbar {
-    grid-area: search;
-}
-
 #util {
     grid-area: util;
     margin-top: 2em;
