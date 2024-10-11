@@ -1,0 +1,47 @@
+.nav-item {
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.nav-current {
+    color: #e58e27;
+}
+
+.nav-current::before {
+    color: #e58e27;
+    content: "'";
+    position: absolute;
+    background-color: #e58e27;
+    border-radius: 2em;
+    left: 2em;
+    filter: drop-shadow(1px 1px 4px);
+}
+
+#navigation {
+    grid-area: nav;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    row-gap: 1em;
+    padding: 2em;
+}
+
+#logo {
+    font-size: large;
+    font-weight: bolder;
+    color: #fbfbfb;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    padding-left: 1em;
+    text-wrap: nowrap;
+}
+
+#settings {
+    display: flex;
+    align-items: end;
+    padding-left: 1em;
+    color: #fbfbfb;
+}

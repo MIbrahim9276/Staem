@@ -1,0 +1,8 @@
+@import url(../stylesheets/bodystyle.css);
+@import url(../stylesheets/navigation.css);
+
+#main {
+    background-color:bisque;
+    grid-area: main;
+    overflow-y: scroll;
+}
