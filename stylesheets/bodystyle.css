@@ -15,7 +15,7 @@ html, body{
 }
 
 body {
-    background-image: url(../blob-haikei.svg);
+    background-image: url(../assets/blob-haikei.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,11 +26,11 @@ body {
     height: 100%;
     display: grid;
     grid-template-areas:
-        "nav main main"
-        "nav main main"
-        "nav main main";
-    grid-template-columns: 0.5fr 3.5fr;
-    grid-template-rows: 0.5fr 3.5fr;
+        "nav search util"
+        "nav main   main"
+        "nav main   main";
+    grid-template-columns: 0.5fr 2.5fr 1fr;
+    grid-template-rows: 0.5fr 2.5fr 1fr;
     row-gap: 1em;
     column-gap: 2em;
 }
