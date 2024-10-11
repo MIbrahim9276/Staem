@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
-    <title>Staem Publish</title>
-</head>
-<body>
-    <center>
-    <div class="container">
-        <h3>add new product</he>
-        <form class="form-box" action="" method="post">
-            <label class="enter-label" for="product-name">Product name</label>
-            <input id="product-name" class="box" type="text" name="name"  required>
-            <label class="enter-label" for="product-price">Price</label>
-            <input id="product-price" class="box" type="text" 
-          name="price" required>
-            <br>
-            <label class="choose-picture" for="file">Choose picture</label>
-            <input class="box" type="file" name="file" id="file" 
-            required style="display: none;" >
-            <button name="upload" type="submit">add product</button>
-            <br><br>
-            <a href="products.php">show Products</a>
-        </form>
-    </div>
-    </center>
-</body>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="publish.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
+        <title>Staem - Publish</title>
+      
+    </head>
+    <body>
+        <div id="container">
+            <nav id="navigation">
+                <div id="logo">STAEM</div>
+                <ul id="nav-container">
+                    <li><a class="nav-item nav-current" href="store.html">Game store</a></li>
+                    <li><a class="nav-item" href="#">Library</a></li>
+                </ul>
+                <div id="settings">Settings</div>
+            </nav>
+            <div id="searchbar"></div>
+            <div id="util"></div>
+            <main id="main">
+                <div class="box">
+                    <form class="form-box" action="" method="post">
+                        <h2>add new product</h2>
+
+                        <label for="name">product name</label>
+                        <input class="input-box" type="text" id="name" 
+                        name="product-name" required>
+                        <br>
+
+                        
+                        <label for="name">product price</label>
+                        <input type="text" class="input-box" id="price" 
+                        name="product-price" required>
+                        <br>
+                        <label for="description" >description</label>
+                        <input type="text" id="description" class="input-box">
+                        <br><br>
+
+                        <label for="file" class="choose-picture">choose picture</label>
+                        <input type="file"  class="choose-picture" required id="file" 
+                        name="product-file" style="display: none;">
+
+                        <button type="submit">upload</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="store.js"></script>
+    </body>
 </html>
