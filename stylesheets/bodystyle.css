@@ -15,11 +15,21 @@ html, body{
 }
 
 body {
+    background-color: #161a1e;
+    overflow: hidden;
+}
+
+body::before {
     background-image: url(../assets/blob-haikei.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(200px);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: rotation 10s infinite linear;
 }
 
 #container {
@@ -33,4 +43,19 @@ body {
     grid-template-rows: 0.5fr 2.5fr 1fr;
     row-gap: 1em;
     column-gap: 2em;
+    backdrop-filter: blur(100px);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
